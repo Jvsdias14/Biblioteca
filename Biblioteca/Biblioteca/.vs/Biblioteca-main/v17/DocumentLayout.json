@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\Model\\G\u00EAnero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Biblioteca-main\\SistemaBiblioteca\\Model\\G\u00EAnero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\Helper\\DataHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Biblioteca-main\\SistemaBiblioteca\\Helper\\DataHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\FrmGenero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Biblioteca-main\\SistemaBiblioteca\\FrmGenero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\FrmGenero.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Biblioteca-main\\SistemaBiblioteca\\FrmGenero.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Biblioteca-main\\SistemaBiblioteca\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataHelper.cs",
+              "DocumentMoniker": "C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\Helper\\DataHelper.cs",
+              "RelativeDocumentMoniker": "Biblioteca-main\\SistemaBiblioteca\\Helper\\DataHelper.cs",
+              "ToolTip": "C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\Helper\\DataHelper.cs",
+              "RelativeToolTip": "Biblioteca-main\\SistemaBiblioteca\\Helper\\DataHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T18:36:13.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "G\u00EAnero.cs",
+              "DocumentMoniker": "C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\Model\\G\u00EAnero.cs",
+              "RelativeDocumentMoniker": "Biblioteca-main\\SistemaBiblioteca\\Model\\G\u00EAnero.cs",
+              "ToolTip": "C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\Model\\G\u00EAnero.cs",
+              "RelativeToolTip": "Biblioteca-main\\SistemaBiblioteca\\Model\\G\u00EAnero.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAHUAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T18:27:55.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmGenero.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\FrmGenero.Designer.cs",
+              "RelativeDocumentMoniker": "Biblioteca-main\\SistemaBiblioteca\\FrmGenero.Designer.cs",
+              "ToolTip": "C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\FrmGenero.Designer.cs",
+              "RelativeToolTip": "Biblioteca-main\\SistemaBiblioteca\\FrmGenero.Designer.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T18:24:15.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmGenero.cs",
+              "DocumentMoniker": "C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\FrmGenero.cs",
+              "RelativeDocumentMoniker": "Biblioteca-main\\SistemaBiblioteca\\FrmGenero.cs",
+              "ToolTip": "C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\FrmGenero.cs",
+              "RelativeToolTip": "Biblioteca-main\\SistemaBiblioteca\\FrmGenero.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAApwCAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T18:21:33.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\Program.cs",
+              "RelativeDocumentMoniker": "Biblioteca-main\\SistemaBiblioteca\\Program.cs",
+              "ToolTip": "C:\\Users\\pedre\\OneDrive\\ProgrammingStuff\\Visual Studio\\Biblioteca-main\\Biblioteca-main\\SistemaBiblioteca\\Program.cs",
+              "RelativeToolTip": "Biblioteca-main\\SistemaBiblioteca\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T18:18:18.289Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
