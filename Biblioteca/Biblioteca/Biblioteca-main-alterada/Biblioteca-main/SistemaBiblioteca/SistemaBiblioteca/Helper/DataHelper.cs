@@ -17,6 +17,7 @@ namespace SistemaBiblioteca.Helper
         public static List<Autor> ListaAutor { get; set; }
         public static List<Editora> ListaEditora { get; set; }
         public static List<Idioma> ListaIdioma { get; set; }
+        public static List<Livro> ListaLivros { get; set; }
         public static SqlConnection Conexao()
         {
             string strconnection = "Data Source=.\\SQLEXPRESS;Initial Catalog=biblioteca;Integrated Security=True;TrustServerCertificate=True;";
