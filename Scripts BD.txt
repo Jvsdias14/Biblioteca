@@ -1,0 +1,204 @@
+
+USE [Biblioteca]
+GO
+/****** Object:  Table [dbo].[Autor]    Script Date: 15/09/2024 10:13:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Autor](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Configuracao]    Script Date: 15/09/2024 10:13:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Configuracao](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[QtdDiasEmprestimo] [int] NOT NULL,
+	[ValorDiariaEmprestimo] [float] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Editora]    Script Date: 15/09/2024 10:13:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Editora](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Emprestimo]    Script Date: 15/09/2024 10:13:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Emprestimo](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[IdPessoa] [int] NOT NULL,
+	[DataSaida] [date] NOT NULL,
+	[DataPrevistaEntrega] [date] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Genero]    Script Date: 15/09/2024 10:13:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Genero](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Idioma]    Script Date: 15/09/2024 10:13:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Idioma](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Livro]    Script Date: 15/09/2024 10:13:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Livro](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[IdIdioma] [int] NOT NULL,
+	[IdEditora] [int] NOT NULL,
+	[IdGenero] [int] NOT NULL,
+	[ISBN] [varchar](20) NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
+	[Descricao] [varchar](255) NULL,
+	[Paginas] [int] NOT NULL,
+	[Edicao] [int] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[LivroAutor]    Script Date: 15/09/2024 10:13:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[LivroAutor](
+	[IdAutor] [int] NOT NULL,
+	[IdLivro] [int] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[IdAutor] ASC,
+	[IdLivro] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[LivroEmprestado]    Script Date: 15/09/2024 10:13:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[LivroEmprestado](
+	[IdEmprestimo] [int] NOT NULL,
+	[IdLivro] [int] NOT NULL,
+	[DataEntrega] [date] NOT NULL,
+	[DiasAtraso] [int] NULL,
+	[ValorMulta] [float] NULL,
+	[ValorPago] [float] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[IdEmprestimo] ASC,
+	[IdLivro] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Pessoa]    Script Date: 15/09/2024 10:13:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Pessoa](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Usuario]    Script Date: 15/09/2024 10:13:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Usuario](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](100) NOT NULL,
+	[Email] [varchar](100) NOT NULL,
+	[Senha] [varchar](50) NOT NULL,
+	[Tipo] [varchar](50) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Emprestimo]  WITH CHECK ADD FOREIGN KEY([IdPessoa])
+REFERENCES [dbo].[Pessoa] ([id])
+GO
+ALTER TABLE [dbo].[Livro]  WITH CHECK ADD FOREIGN KEY([IdEditora])
+REFERENCES [dbo].[Editora] ([id])
+GO
+ALTER TABLE [dbo].[Livro]  WITH CHECK ADD FOREIGN KEY([IdGenero])
+REFERENCES [dbo].[Genero] ([id])
+GO
+ALTER TABLE [dbo].[Livro]  WITH CHECK ADD FOREIGN KEY([IdIdioma])
+REFERENCES [dbo].[Idioma] ([id])
+GO
+ALTER TABLE [dbo].[LivroAutor]  WITH CHECK ADD FOREIGN KEY([IdAutor])
+REFERENCES [dbo].[Autor] ([id])
+GO
+ALTER TABLE [dbo].[LivroAutor]  WITH CHECK ADD FOREIGN KEY([IdLivro])
+REFERENCES [dbo].[Livro] ([id])
+GO
+ALTER TABLE [dbo].[LivroEmprestado]  WITH CHECK ADD FOREIGN KEY([IdEmprestimo])
+REFERENCES [dbo].[Emprestimo] ([id])
+GO
+ALTER TABLE [dbo].[LivroEmprestado]  WITH CHECK ADD FOREIGN KEY([IdLivro])
+REFERENCES [dbo].[Livro] ([id])
+GO
+USE [master]
+GO
+ALTER DATABASE [Biblioteca] SET  READ_WRITE 
+GO
